@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'RobotoMono';
+	src: url('/fonts/RobotoMono-Regular.ttf') format('truetype');
+}
+
+@keyframes open {
+	0% {
+		width: 1rem;
+	}
+	100% {
+		width: 9rem;
+	}
+}
+
+.dropdown-menu {
+    position: relative;
+	width: fit-content;
+	z-index: 999;
+	transition: width 2s;
+}
+.menu-icon {
+	width: 1.5rem;
+	cursor: pointer;
+}
+.dropdown-container {
+	position: absolute;
+    top: -0.1rem;
+    left: 3.5rem;
+	width: 9rem;
+	border: 1rem solid rgba(31, 30, 41, 0.938);
+    background-color: rgba(31, 30, 41, 0.938);
+	border-radius: 3%;
+	animation: 0.2s ease-out 0s open;
+}
+.dropdown-tab {
+	font-family: 'RobotoMono';
+	font-size: 0.8rem;
+	color: white;
+	text-align: center;
+	padding: 0.5rem;
+	background-color: rgba(31, 30, 41, 0.938);
+	cursor: pointer;
+}
+.dropdown-tab:hover {
+    text-decoration: underline;
+}
+.hidden {
+	display: none;
+}
